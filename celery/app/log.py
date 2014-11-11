@@ -104,6 +104,8 @@ class Logging(object):
             format=format, colorize=colorize,
         )
 
+        print 'CELERY DEBUG', receivers, MP_LOG
+
         if not receivers:
             root = logging.getLogger()
 
