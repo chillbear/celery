@@ -101,7 +101,8 @@ class Logging(object):
             sender=None, loglevel=loglevel, logfile=logfile,
             format=format, colorize=colorize,
         )
-
+        print 'CELERY LOG RECEIVERS', receivers
+        print 'CELERY MP LOG', receivers
         if not receivers:
             root = logging.getLogger()
 
